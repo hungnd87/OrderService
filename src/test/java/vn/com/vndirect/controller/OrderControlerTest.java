@@ -1,4 +1,4 @@
-package vn.com.vndirect;
+package vn.com.vndirect.controller;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package vn.com.vndirect;
+package vn.com.vndirect.service;
 
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.method;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
