@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
-@ContextConfiguration(locations = {"classpath:/WEB-INF/mvc-dispatcher-servlet.xml"})
+@ContextConfiguration(locations = {"classpath:/WEB-INF/spring-bean.xml"})
 public class ApplicationContextTest extends AbstractJUnit4SpringContextTests {
 	@Test 
 	public void initTest() {
