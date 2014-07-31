@@ -17,6 +17,9 @@ import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.web.client.RestTemplate;
 
 import vn.com.vndirect.exception.InvalidAccountException;
+import vn.com.vndirect.exception.InvalidPriceException;
+import vn.com.vndirect.exception.InvalidQuantityException;
+import vn.com.vndirect.exception.InvalidSymbolException;
 import vn.com.vndirect.exception.ValidatorException;
 import vn.com.vndirect.model.Order;
 import vn.com.vndirect.model.OrderType;
@@ -65,6 +68,31 @@ public class OrderServiceTest {
 	
 	@Test(expected = InvalidAccountException.class)  
 	public void testPlaceOrderWithInvalidAccount() throws ValidatorException{
+		Order order = new Order();
+		orderService.placeOrder(order);
+	}
+	
+	@Test(expected = InvalidSymbolException.class)  
+	public void testPlaceOrderWithInvalidSymbol() throws ValidatorException{
+		Order order = new Order();
+		orderService.placeOrder(order);
+	}
+	
+	@Test(expected = InvalidPriceException.class)  
+	public void testPlaceOrderWithInvalidPrice() throws ValidatorException{
+		Order order = new Order();
+		orderService.placeOrder(order);
+	}
+	
+	@Test(expected = InvalidQuantityException.class)  
+	public void testPlaceOrderWithInvalidQuantity() throws ValidatorException{
+		Order order = new Order();
+		orderService.placeOrder(order);
+	}
+	
+	
+	@Test(expected = InvalidAccountException.class)  
+	public void testPlaceOrderWithInvalidOrderType() throws ValidatorException{
 		Order order = new Order();
 		orderService.placeOrder(order);
 	}
