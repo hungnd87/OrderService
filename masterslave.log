@@ -1,0 +1,455 @@
+2014-07-31 22:53:15 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/SpringMVC/orders"
+2014-07-31 22:53:15 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-07-31 22:53:15 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@215f7107] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@f593af]
+2014-07-31 22:56:00 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/orders"
+2014-07-31 22:56:00 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-07-31 22:56:00 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@236527f] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@3c6210fb]
+2014-07-31 22:56:14 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/orders"
+2014-07-31 22:56:14 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-07-31 22:56:14 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@7c0b6548] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@50269997]
+2014-07-31 22:56:14 WARN  RestTemplate:553 - POST request for "http://localhost:8080/orderservice/orders" resulted in 404 (Not Found); invoking error handler
+2014-07-31 22:57:00 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-07-31 22:57:00 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-07-31 22:57:00 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@3c6210fb] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@4a48edb5]
+2014-07-31 22:57:00 WARN  RestTemplate:553 - POST request for "http://localhost:8080/orderservice/order" resulted in 405 (Method Not Allowed); invoking error handler
+2014-07-31 22:58:04 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-07-31 22:58:04 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-07-31 22:58:04 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@6762ba99] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@2c8c7d6]
+2014-07-31 22:58:04 WARN  RestTemplate:553 - POST request for "http://localhost:8080/orderservice/order" resulted in 405 (Method Not Allowed); invoking error handler
+2014-07-31 22:58:56 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-07-31 22:58:56 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-07-31 22:58:56 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@7c0b6548] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@50269997]
+2014-07-31 22:58:56 DEBUG RestTemplate:541 - POST request for "http://localhost:8080/orderservice/order" resulted in 200 (OK)
+2014-07-31 22:58:56 DEBUG RestTemplate:91 - Reading [class vn.com.vndirect.model.StockInfo] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@50269997]
+2014-07-31 23:25:43 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-07-31 23:25:43 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-07-31 23:25:43 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@3c6210fb] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@4a48edb5]
+2014-07-31 23:25:43 DEBUG RestTemplate:541 - POST request for "http://localhost:8080/orderservice/order" resulted in 200 (OK)
+2014-07-31 23:25:43 DEBUG RestTemplate:91 - Reading [class vn.com.vndirect.model.StockInfo] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@4a48edb5]
+2014-07-31 23:49:16 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-07-31 23:49:16 DEBUG RestTemplate:602 - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2014-07-31 23:49:16 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@4afb6354] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@3e364641]
+2014-07-31 23:49:16 DEBUG RestTemplate:541 - POST request for "http://localhost:8080/orderservice/order" resulted in 200 (OK)
+2014-07-31 23:49:16 DEBUG RestTemplate:100 - Reading [java.lang.String] as "application/json;charset=UTF-8" using [org.springframework.http.converter.StringHttpMessageConverter@560c3014]
+2014-07-31 23:49:42 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-07-31 23:49:42 DEBUG RestTemplate:602 - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2014-07-31 23:49:42 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@5d3e754f] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@2f87c55c]
+2014-07-31 23:49:42 DEBUG RestTemplate:541 - POST request for "http://localhost:8080/orderservice/order" resulted in 200 (OK)
+2014-07-31 23:49:42 DEBUG RestTemplate:100 - Reading [java.lang.String] as "application/json;charset=UTF-8" using [org.springframework.http.converter.StringHttpMessageConverter@406754d6]
+2014-07-31 23:50:29 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-07-31 23:50:29 DEBUG RestTemplate:602 - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2014-07-31 23:50:29 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@337748d3] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@5c4e2f0a]
+2014-07-31 23:50:29 DEBUG RestTemplate:541 - POST request for "http://localhost:8080/orderservice/order" resulted in 200 (OK)
+2014-07-31 23:50:29 DEBUG RestTemplate:100 - Reading [java.lang.String] as "application/json;charset=UTF-8" using [org.springframework.http.converter.StringHttpMessageConverter@6ae2d0b2]
+2014-07-31 23:52:48 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-07-31 23:52:48 DEBUG RestTemplate:602 - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2014-07-31 23:52:48 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@3c6210fb] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@4a48edb5]
+2014-07-31 23:52:48 DEBUG RestTemplate:541 - POST request for "http://localhost:8080/orderservice/order" resulted in 200 (OK)
+2014-07-31 23:52:48 DEBUG RestTemplate:100 - Reading [java.lang.String] as "application/json;charset=UTF-8" using [org.springframework.http.converter.StringHttpMessageConverter@bb273cc]
+2014-07-31 23:53:40 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-07-31 23:53:41 DEBUG RestTemplate:602 - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2014-07-31 23:53:41 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@508de972] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@14d964af]
+2014-07-31 23:53:41 DEBUG RestTemplate:541 - POST request for "http://localhost:8080/orderservice/order" resulted in 200 (OK)
+2014-07-31 23:53:41 DEBUG RestTemplate:100 - Reading [java.lang.String] as "application/json;charset=UTF-8" using [org.springframework.http.converter.StringHttpMessageConverter@673dd208]
+2014-07-31 23:54:38 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-07-31 23:54:38 DEBUG RestTemplate:602 - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2014-07-31 23:54:38 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@421fbfd6] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@326b9c84]
+2014-07-31 23:56:33 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-07-31 23:56:33 DEBUG RestTemplate:602 - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2014-07-31 23:56:33 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@7a8eae04] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@2d42c778]
+2014-07-31 23:56:56 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-07-31 23:56:56 DEBUG RestTemplate:602 - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2014-07-31 23:56:56 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@7c34151f] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@3f56e5ed]
+2014-07-31 23:57:27 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-07-31 23:57:27 DEBUG RestTemplate:602 - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2014-07-31 23:57:27 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@40e7e8eb] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@396cbd97]
+2014-08-01 00:03:00 DEBUG SpringJUnit4ClassRunner:106 - SpringJUnit4ClassRunner constructor called with [class vn.com.vndirect.OrderServiceTest].
+2014-08-01 00:03:00 INFO  TestContext:104 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:03:00 INFO  TestContextManager:235 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2014-08-01 00:03:00 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:03:00 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:03:00 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:03:00 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:03:00 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:03:00 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:03:00 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:03:00 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:03:00 DEBUG DependencyInjectionTestExecutionListener:73 - Performing dependency injection for test context [[TestContext@29e97f9f testClass = OrderServiceTest, testInstance = vn.com.vndirect.OrderServiceTest@20b9b538, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@288051 testClass = OrderServiceTest, locations = '{}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'null', parent = [null]]]].
+2014-08-01 00:03:00 ERROR TestContextManager:324 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@630045eb] to prepare test instance [vn.com.vndirect.OrderServiceTest@20b9b538]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.lang.IllegalArgumentException: Cannot load an ApplicationContext with a NULL 'contextLoader'. Consider annotating your test class with @ContextConfiguration or @ContextHierarchy.
+	at org.springframework.util.Assert.notNull(Assert.java:112)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:57)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+2014-08-01 00:03:00 DEBUG DirtiesContextTestExecutionListener:138 - After test class: context [[TestContext@29e97f9f testClass = OrderServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@288051 testClass = OrderServiceTest, locations = '{}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'null', parent = [null]]]], dirtiesContext [false].
+2014-08-01 00:07:13 DEBUG SpringJUnit4ClassRunner:106 - SpringJUnit4ClassRunner constructor called with [class vn.com.vndirect.OrderServiceTest].
+2014-08-01 00:07:13 DEBUG AbstractDelegatingSmartContextLoader:89 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@30ec4a87 declaringClass = 'vn.com.vndirect.OrderServiceTest', locations = '{classpath:/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2014-08-01 00:07:13 DEBUG ContextLoaderUtils:471 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:07:13 INFO  TestContextManager:235 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2014-08-01 00:07:13 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:07:13 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:07:13 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:07:13 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:07:13 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:07:13 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:07:13 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:07:13 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:07:13 DEBUG DependencyInjectionTestExecutionListener:73 - Performing dependency injection for test context [[TestContext@4bbd7848 testClass = OrderServiceTest, testInstance = vn.com.vndirect.OrderServiceTest@423e5d1, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+2014-08-01 00:07:13 DEBUG AbstractDelegatingSmartContextLoader:98 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2014-08-01 00:07:13 DEBUG AbstractGenericContextLoader:104 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2014-08-01 00:07:14 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-08-01 00:07:14 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-08-01 00:07:14 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2014-08-01 00:07:14 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [WEB-INF/mvc-dispatcher-servlet.xml]
+2014-08-01 00:07:14 ERROR TestContextManager:324 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6ba7508a] to prepare test instance [vn.com.vndirect.OrderServiceTest@423e5d1]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [WEB-INF/mvc-dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: class path resource [WEB-INF/mvc-dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:233)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:117)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: java.io.FileNotFoundException: class path resource [WEB-INF/mvc-dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:171)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 37 more
+2014-08-01 00:07:14 DEBUG DirtiesContextTestExecutionListener:138 - After test class: context [[TestContext@4bbd7848 testClass = OrderServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], dirtiesContext [false].
+2014-08-01 00:08:13 DEBUG SpringJUnit4ClassRunner:106 - SpringJUnit4ClassRunner constructor called with [class vn.com.vndirect.OrderServiceTest].
+2014-08-01 00:08:13 DEBUG AbstractDelegatingSmartContextLoader:89 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@30ec4a87 declaringClass = 'vn.com.vndirect.OrderServiceTest', locations = '{classpath:/webapp/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2014-08-01 00:08:13 DEBUG ContextLoaderUtils:471 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:13 INFO  TestContextManager:235 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2014-08-01 00:08:13 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:13 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:13 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:13 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:13 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:13 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:13 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:13 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:13 DEBUG DependencyInjectionTestExecutionListener:73 - Performing dependency injection for test context [[TestContext@4bbd7848 testClass = OrderServiceTest, testInstance = vn.com.vndirect.OrderServiceTest@423e5d1, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/webapp/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+2014-08-01 00:08:13 DEBUG AbstractDelegatingSmartContextLoader:98 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/webapp/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2014-08-01 00:08:13 DEBUG AbstractGenericContextLoader:104 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/webapp/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2014-08-01 00:08:13 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-08-01 00:08:13 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-08-01 00:08:13 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2014-08-01 00:08:13 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [webapp/WEB-INF/mvc-dispatcher-servlet.xml]
+2014-08-01 00:08:13 ERROR TestContextManager:324 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3598cb3d] to prepare test instance [vn.com.vndirect.OrderServiceTest@423e5d1]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [webapp/WEB-INF/mvc-dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: class path resource [webapp/WEB-INF/mvc-dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:233)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:117)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: java.io.FileNotFoundException: class path resource [webapp/WEB-INF/mvc-dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:171)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 37 more
+2014-08-01 00:08:13 DEBUG DirtiesContextTestExecutionListener:138 - After test class: context [[TestContext@4bbd7848 testClass = OrderServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/webapp/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], dirtiesContext [false].
+2014-08-01 00:08:59 DEBUG SpringJUnit4ClassRunner:106 - SpringJUnit4ClassRunner constructor called with [class vn.com.vndirect.OrderServiceTest].
+2014-08-01 00:08:59 DEBUG AbstractDelegatingSmartContextLoader:89 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@30ec4a87 declaringClass = 'vn.com.vndirect.OrderServiceTest', locations = '{classpath:/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2014-08-01 00:08:59 DEBUG ContextLoaderUtils:471 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:59 INFO  TestContextManager:235 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2014-08-01 00:08:59 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:59 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:59 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:59 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:59 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:59 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:59 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:59 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:08:59 DEBUG DependencyInjectionTestExecutionListener:73 - Performing dependency injection for test context [[TestContext@4bbd7848 testClass = OrderServiceTest, testInstance = vn.com.vndirect.OrderServiceTest@423e5d1, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+2014-08-01 00:08:59 DEBUG AbstractDelegatingSmartContextLoader:98 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2014-08-01 00:08:59 DEBUG AbstractGenericContextLoader:104 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2014-08-01 00:08:59 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-08-01 00:08:59 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-08-01 00:08:59 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2014-08-01 00:08:59 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml]
+2014-08-01 00:08:59 ERROR TestContextManager:324 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6ba7508a] to prepare test instance [vn.com.vndirect.OrderServiceTest@423e5d1]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: class path resource [src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:233)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:117)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: java.io.FileNotFoundException: class path resource [src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:171)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 37 more
+2014-08-01 00:08:59 DEBUG DirtiesContextTestExecutionListener:138 - After test class: context [[TestContext@4bbd7848 testClass = OrderServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], dirtiesContext [false].
+2014-08-01 00:09:20 DEBUG SpringJUnit4ClassRunner:106 - SpringJUnit4ClassRunner constructor called with [class vn.com.vndirect.OrderServiceTest].
+2014-08-01 00:09:20 DEBUG AbstractDelegatingSmartContextLoader:89 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@30ec4a87 declaringClass = 'vn.com.vndirect.OrderServiceTest', locations = '{classpath:/mvc-dispatcher-servlet.xml}', classes = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2014-08-01 00:09:20 DEBUG ContextLoaderUtils:471 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:09:20 INFO  TestContextManager:235 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2014-08-01 00:09:20 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:09:20 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:09:20 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:09:20 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:09:20 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:09:20 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:09:20 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:09:20 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:09:20 DEBUG DependencyInjectionTestExecutionListener:73 - Performing dependency injection for test context [[TestContext@4bbd7848 testClass = OrderServiceTest, testInstance = vn.com.vndirect.OrderServiceTest@423e5d1, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+2014-08-01 00:09:20 DEBUG AbstractDelegatingSmartContextLoader:98 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2014-08-01 00:09:20 DEBUG AbstractGenericContextLoader:104 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2014-08-01 00:09:20 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-08-01 00:09:20 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-08-01 00:09:20 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2014-08-01 00:09:20 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [mvc-dispatcher-servlet.xml]
+2014-08-01 00:09:20 ERROR TestContextManager:324 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6ba7508a] to prepare test instance [vn.com.vndirect.OrderServiceTest@423e5d1]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [mvc-dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: class path resource [mvc-dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:233)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:117)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: java.io.FileNotFoundException: class path resource [mvc-dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:171)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 37 more
+2014-08-01 00:09:20 DEBUG DirtiesContextTestExecutionListener:138 - After test class: context [[TestContext@4bbd7848 testClass = OrderServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@50c4fe76 testClass = OrderServiceTest, locations = '{classpath:/mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], dirtiesContext [false].
+2014-08-01 00:10:54 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservice/order"
+2014-08-01 00:10:54 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-01 00:10:54 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@7ab2c6a6] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@6f0ffb38]
+2014-08-01 00:10:54 DEBUG RestTemplate:541 - POST request for "http://localhost:8080/orderservice/order" resulted in 200 (OK)
+2014-08-01 00:10:54 DEBUG RestTemplate:91 - Reading [class vn.com.vndirect.model.StockInfo] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@6f0ffb38]
+2014-08-01 00:12:02 DEBUG SpringJUnit4ClassRunner:106 - SpringJUnit4ClassRunner constructor called with [class vn.com.vndirect.OrderServiceTest].
+2014-08-01 00:12:02 DEBUG AbstractDelegatingSmartContextLoader:89 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@25595f51 declaringClass = 'vn.com.vndirect.OrderServiceTest', locations = '{classpath://mvc-dispatcher-servlet.xml}', classes = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2014-08-01 00:12:02 DEBUG ContextLoaderUtils:471 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:12:02 INFO  TestContextManager:235 - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2014-08-01 00:12:02 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:12:02 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:12:02 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:12:02 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:12:02 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:12:02 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:12:02 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:12:02 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:12:02 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:12:02 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:12:02 DEBUG ProfileValueUtils:68 - Retrieved @ProfileValueSourceConfiguration [null] for test class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:12:02 DEBUG ProfileValueUtils:80 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [vn.com.vndirect.OrderServiceTest]
+2014-08-01 00:12:02 DEBUG DependencyInjectionTestExecutionListener:73 - Performing dependency injection for test context [[TestContext@c0b76fa testClass = OrderServiceTest, testInstance = vn.com.vndirect.OrderServiceTest@44b01d43, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6513cf0 testClass = OrderServiceTest, locations = '{classpath://mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+2014-08-01 00:12:02 DEBUG AbstractDelegatingSmartContextLoader:98 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@6513cf0 testClass = OrderServiceTest, locations = '{classpath://mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2014-08-01 00:12:02 DEBUG AbstractGenericContextLoader:104 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@6513cf0 testClass = OrderServiceTest, locations = '{classpath://mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2014-08-01 00:12:03 DEBUG StandardEnvironment:107 - Adding [systemProperties] PropertySource with lowest search precedence
+2014-08-01 00:12:03 DEBUG StandardEnvironment:107 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2014-08-01 00:12:03 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2014-08-01 00:12:03 INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [mvc-dispatcher-servlet.xml]
+2014-08-01 00:12:03 ERROR TestContextManager:324 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3598cb3d] to prepare test instance [vn.com.vndirect.OrderServiceTest@44b01d43]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [mvc-dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: class path resource [mvc-dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:233)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:117)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: java.io.FileNotFoundException: class path resource [mvc-dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:171)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 37 more
+2014-08-01 00:12:03 DEBUG DirtiesContextTestExecutionListener:138 - After test class: context [[TestContext@c0b76fa testClass = OrderServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6513cf0 testClass = OrderServiceTest, locations = '{classpath://mvc-dispatcher-servlet.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], dirtiesContext [false].

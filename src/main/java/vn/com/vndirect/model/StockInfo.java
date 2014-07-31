@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 import org.codehaus.jackson.annotate.JsonAutoDetect;
 
-@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
 public class StockInfo implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -14,6 +13,8 @@ public class StockInfo implements Serializable {
 	private double floorPrice;
 	private String floorCode;
 	private String symbol;
+	
+	public StockInfo() {};
 	
 	public StockInfo(double basicprice, double ceilingPrice, double floorPrice,
 			String floorCode, String symbol) {
