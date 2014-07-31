@@ -35,6 +35,9 @@ public class OrderServiceTest {
 		MockRestServiceServer mockServer = MockRestServiceServer.createServer(restTemplate);
 		mockServer.expect(requestTo(serviceSenderUrl + orderServiceMethod)).andExpect(method(HttpMethod.POST)).andRespond(withSuccess("10", MediaType.TEXT_PLAIN));
 		OrderService orderService = new OrderServiceImpl(restTemplate);
+		orderService.setServiceSenderUrl(serviceSenderUrl);
+		orderService.setOrderServiceMethod(orderServiceMethod);
+
 		Order order = new Order();
 		String id = orderService.placeOrder(order);
 		Thread.sleep(100);

@@ -11,16 +11,8 @@ import vn.com.vndirect.model.Order;
 public class OrderServiceImpl implements OrderService {
 
 	private RestTemplate restTemplate;
-
-	@Override
-	public RestTemplate getRestTemplate() {
-		return restTemplate;
-	}
-
-	@Override
-	public void setRestTemplate(RestTemplate restTemplate) {
-		this.restTemplate = restTemplate;
-	}
+	private String serviceSenderUrl;
+	private String orderServiceMethod;
 
 	public OrderServiceImpl(RestTemplate restTemplate) {
 		this.restTemplate = restTemplate;
@@ -28,13 +20,36 @@ public class OrderServiceImpl implements OrderService {
 
 	@Override
 	public String placeOrder(Order order) {
-		String url = "http://localhost:8080/orderservice/order";
+		String url = serviceSenderUrl + order;
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
 
 		String res = restTemplate.postForObject(url, order, String.class);
 		return res;
+	}
+
+	@Override
+	public void setServiceSenderUrl(String serviceSenderUrl) {
+		this.serviceSenderUrl = serviceSenderUrl;
+	}
+
+	public String getServiceSenderUrl() {
+		return serviceSenderUrl;
+	}
+
+	@Override
+	public void setOrderServiceMethod(String orderServiceMethod) {
+		this.orderServiceMethod = orderServiceMethod;
+	}
+
+	public String getOrderServiceMethod() {
+		return orderServiceMethod;
+	}
+
+	@Override
+	public void setRestTemplate(RestTemplate restTemplate) {
+		this.restTemplate = restTemplate;
 	}
 
 }

@@ -7,7 +7,9 @@ public interface OrderService {
 
 	void setRestTemplate(RestTemplate restTemplate);
 
-	RestTemplate getRestTemplate();
-
 	String placeOrder(Order order);
+
+	void setServiceSenderUrl(String serviceSenderUrl);
+
+	void setOrderServiceMethod(String orderServiceMethod);
 }
