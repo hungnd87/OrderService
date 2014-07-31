@@ -10,7 +10,7 @@ import vn.com.vndirect.model.StockInfo;
 @Controller
 public class OrderController {
 
-	@RequestMapping(value = "/order", method = RequestMethod.POST)
+	@RequestMapping(value = "/placeorder", method = RequestMethod.GET)
 	
 	public @ResponseBody StockInfo getStockInfo() {
 		StockInfo stockInfo = new StockInfo(90, 90, 98, "02", "VND");

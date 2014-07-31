@@ -7,7 +7,6 @@
         <property name="messageConverters">
             <list>
                 <bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter"/>
-                <bean class="com.springsource.samples.resttemplate.BufferedImageHttpMessageConverter"/>
             </list>
         </property>
     </bean>
