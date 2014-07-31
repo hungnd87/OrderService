@@ -1903,3 +1903,6 @@ Caused by: java.io.FileNotFoundException: class path resource [mvc-dispatcher-se
 2014-08-01 00:58:45 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@6490832e] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@4b947496]
 2014-08-01 00:58:45 DEBUG RestTemplate:541 - POST request for "http://localhost:8080/orderservice/order" resulted in 200 (OK)
 2014-08-01 00:58:45 DEBUG RestTemplate:100 - Reading [java.lang.String] as "text/plain" using [org.springframework.http.converter.StringHttpMessageConverter@6f0ffb38]
+2014-08-01 01:40:41 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservicevn.com.vndirect.model.Order@13b06041"
+2014-08-01 01:40:41 DEBUG RestTemplate:602 - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+2014-08-01 01:40:41 DEBUG RestTemplate:680 - Writing [vn.com.vndirect.model.Order@13b06041] using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@688a548b]

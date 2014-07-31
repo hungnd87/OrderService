@@ -12,7 +12,9 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.web.client.RestTemplate;
 
+import vn.com.vndirect.exception.ValidatorException;
 import vn.com.vndirect.model.Order;
+import vn.com.vndirect.model.OrderType;
 import vn.com.vndirect.service.OrderService;
 import vn.com.vndirect.service.OrderServiceImpl;
 
@@ -20,6 +22,7 @@ public class OrderServiceTest {
 	private String serviceSenderUrl;
 	private String orderServiceMethod;
 	private RestTemplate restTemplate;
+	private OrderService orderService;
 	
 	
 	@Before
@@ -30,19 +33,31 @@ public class OrderServiceTest {
 	}
 	
 	@Test
-	public void testCallRequest() throws InterruptedException{
+	public void testPlaceOrderWithValidOrder() throws InterruptedException{
 		
 		MockRestServiceServer mockServer = MockRestServiceServer.createServer(restTemplate);
 		mockServer.expect(requestTo(serviceSenderUrl + orderServiceMethod)).andExpect(method(HttpMethod.POST)).andRespond(withSuccess("10", MediaType.TEXT_PLAIN));
-		OrderService orderService = new OrderServiceImpl(restTemplate);
+		orderService = new OrderServiceImpl(restTemplate);
 		orderService.setServiceSenderUrl(serviceSenderUrl);
 		orderService.setOrderServiceMethod(orderServiceMethod);
 
 		Order order = new Order();
+		order.setAccount("hungnd7");
+		order.setOrderType(OrderType.ATC);
+		order.setPrice(90);
+		order.setQuantity(90);
+		order.setSymbol("VND");
 		String id = orderService.placeOrder(order);
 		Thread.sleep(100);
 		mockServer.verify();
 		Assert.assertEquals("10", id);
+	}
+	
+	@Test(expected = ValidatorException.class)  
+	public void testPlaceOrderWithInvalidAccount(){
+		orderService = new OrderServiceImpl(restTemplate);
+		Order order = new Order();
+		orderService.placeOrder(order);
 	}
 
 }
