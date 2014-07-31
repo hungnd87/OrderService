@@ -1,25 +1,30 @@
 package vn.com.vndirect.service;
 
 import java.util.Arrays;
+import java.util.List;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.web.client.RestTemplate;
 
+import vn.com.vndirect.exception.ValidatorException;
 import vn.com.vndirect.model.Order;
+import vn.com.vndirect.validator.Validator;
 
 public class OrderServiceImpl implements OrderService {
 
 	private RestTemplate restTemplate;
 	private String serviceSenderUrl;
 	private String orderServiceMethod;
+	private List<Validator> validators;	
 
 	public OrderServiceImpl(RestTemplate restTemplate) {
 		this.restTemplate = restTemplate;
 	}
 
 	@Override
-	public String placeOrder(Order order) {
+	public String placeOrder(Order order) throws ValidatorException {
+		validateOrder(order);
 		String url = serviceSenderUrl + order;
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
@@ -27,6 +32,12 @@ public class OrderServiceImpl implements OrderService {
 
 		String res = restTemplate.postForObject(url, order, String.class);
 		return res;
+	}
+
+	private void validateOrder(Order order) throws ValidatorException {
+		for (Validator validator : validators) {
+			validator.validate(order);
+		}
 	}
 
 	@Override
@@ -52,4 +63,9 @@ public class OrderServiceImpl implements OrderService {
 		this.restTemplate = restTemplate;
 	}
 
+	@Override
+	public void setValidators(List<Validator> validators) {
+		this.validators = validators;
+	}
+	
 }
