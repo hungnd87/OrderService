@@ -25,7 +25,7 @@ public class OrderServiceImpl implements OrderService {
 	@Override
 	public String placeOrder(Order order) throws ValidatorException {
 		validateOrder(order);
-		String url = serviceSenderUrl + order;
+		String url = serviceSenderUrl + orderServiceMethod;
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));

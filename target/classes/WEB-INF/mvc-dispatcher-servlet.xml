@@ -12,9 +12,9 @@
         http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
 	<context:component-scan base-package="vn.com.vndirect" />
-
+	
 	<mvc:annotation-driven />
-
+	<import resource="classpath:spring-bean.xml"/>
 </beans>
 
 

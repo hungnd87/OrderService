@@ -26,6 +26,9 @@ import vn.com.vndirect.model.OrderType;
 import vn.com.vndirect.service.OrderService;
 import vn.com.vndirect.service.OrderServiceImpl;
 import vn.com.vndirect.validator.AccountValidator;
+import vn.com.vndirect.validator.PriceGreaterThanZeroValidator;
+import vn.com.vndirect.validator.QuantityValidator;
+import vn.com.vndirect.validator.SymbolValidator;
 import vn.com.vndirect.validator.Validator;
 
 public class OrderServiceTest {
@@ -45,6 +48,9 @@ public class OrderServiceTest {
 		orderService.setOrderServiceMethod(orderServiceMethod);
 		List<Validator> validators = new ArrayList<Validator>();
 		validators.add(new AccountValidator());
+		validators.add(new SymbolValidator());
+		validators.add(new PriceGreaterThanZeroValidator());
+		validators.add(new QuantityValidator());
 		orderService.setValidators(validators);
 	}
 	
@@ -75,18 +81,26 @@ public class OrderServiceTest {
 	@Test(expected = InvalidSymbolException.class)  
 	public void testPlaceOrderWithInvalidSymbol() throws ValidatorException{
 		Order order = new Order();
+		order.setAccount("hiop");
 		orderService.placeOrder(order);
 	}
 	
 	@Test(expected = InvalidPriceException.class)  
 	public void testPlaceOrderWithInvalidPrice() throws ValidatorException{
 		Order order = new Order();
+		order.setAccount("hungnd7");
+		order.setOrderType(OrderType.ATC);
+		order.setSymbol("VTC");
 		orderService.placeOrder(order);
 	}
 	
 	@Test(expected = InvalidQuantityException.class)  
 	public void testPlaceOrderWithInvalidQuantity() throws ValidatorException{
 		Order order = new Order();
+		order.setAccount("hungnd7");
+		order.setOrderType(OrderType.ATC);
+		order.setSymbol("VTC");
+		order.setPrice(90);
 		orderService.placeOrder(order);
 	}
 	
