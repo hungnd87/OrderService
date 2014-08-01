@@ -60,7 +60,7 @@ public class OrderControlerTest {
 	}
 	
 	@Test
-	public void testPlaceOrder() {
+	public void testPlaceOrderWithInvalidParam() {
 		OrderController orderController = new OrderController();
 		orderController.setOrderService(orderService);
 		orderController.setStatusGenerator(new StatusGeneratorImpl());

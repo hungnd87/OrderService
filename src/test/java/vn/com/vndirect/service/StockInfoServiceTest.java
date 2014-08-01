@@ -32,27 +32,21 @@ import vn.com.vndirect.validator.QuantityValidator;
 import vn.com.vndirect.validator.SymbolValidator;
 import vn.com.vndirect.validator.Validator;
 
-public class OrderServiceTest {
+public class StockInfoServiceTest {
 	private String serviceSenderUrl;
 	private String orderServiceMethod;
 	private RestTemplate restTemplate;
-	private OrderService orderService;
+	private StockInfoService stockInfoService;
 	
 	
 	@Before
 	public void setup(){
 		serviceSenderUrl = "http://localhost:8080/orderservice";
-		orderServiceMethod = "placeOrder";
+		orderServiceMethod = "getPrice";
 		restTemplate = new RestTemplate();
-		orderService = new OrderServiceImpl(restTemplate);
-		orderService.setServiceSenderUrl(serviceSenderUrl);
-		orderService.setOrderServiceMethod(orderServiceMethod);
-		List<Validator> validators = new ArrayList<Validator>();
-		validators.add(new AccountValidator());
-		validators.add(new SymbolValidator());
-		validators.add(new PriceGreaterThanZeroValidator());
-		validators.add(new QuantityValidator());
-		orderService.setValidators(validators);
+		stockInfoService = new StockInfoServiceImpl(restTemplate);
+		stockInfoService.setServiceSenderUrl(serviceSenderUrl);
+		stockInfoService.setOrderServiceMethod(orderServiceMethod);
 	}
 	
 	@Test
