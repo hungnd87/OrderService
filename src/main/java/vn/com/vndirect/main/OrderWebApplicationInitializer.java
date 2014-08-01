@@ -9,30 +9,57 @@ import org.springframework.web.context.support.XmlWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
 public class OrderWebApplicationInitializer  implements WebApplicationInitializer {
-
+	private XmlWebApplicationContext appContext;
+	
 	@Override
 	public void onStartup(ServletContext container) throws ServletException {
-		XmlWebApplicationContext appContext = new XmlWebApplicationContext();
+		appContext = new XmlWebApplicationContext();
 	    appContext.setConfigLocation("/WEB-INF/mvc-dispatcher-servlet.xml");
 
 	    ServletRegistration.Dynamic dispatcher =
 	    container.addServlet("dispatcher", new DispatcherServlet(appContext));
 	    dispatcher.setLoadOnStartup(1);
 	    dispatcher.addMapping("/");
-	    try {
-			Thread.sleep(120000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	    appContext.stop();
-	    try {
-			Thread.sleep(50000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	    appContext.start();
+	    
+	    Thread stopThread = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				 try {
+						Thread.sleep(7000);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				 System.out.println("stop");
+				    appContext.stop();
+					appContext.close();
+					//appContext.destroy();
+				
+			}
+		});
+	    
+	    stopThread.start();
+	    
+	    Thread startThread = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				 try {
+						Thread.sleep(12000);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				 System.out.println("start");
+				 appContext.refresh();
+				    appContext.start();
+				
+			}
+		});
+	   
+	    startThread.start();
+	    
 	}
 
 
