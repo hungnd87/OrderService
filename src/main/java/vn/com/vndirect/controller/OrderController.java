@@ -17,11 +17,12 @@ import vn.com.vndirect.utils.StatusGenerator;
 
 @Controller
 public class OrderController {
+	@Autowired
 	OrderService orderService;
 	@Autowired
 	StatusGenerator statusGenerator;
 
-	@RequestMapping(value = "/placeorder", method = RequestMethod.GET)
+	@RequestMapping(value = "/placeorder/account:{account}/symbol:{symbol}/price:{price}/quantity:{quantity}/orderType:{orderType}", method = RequestMethod.GET)
 	
 	public @ResponseBody OrderResult placeOrder(
 			@PathVariable("account") String account,
@@ -29,10 +30,10 @@ public class OrderController {
 			@PathVariable("price") double price,
 			@PathVariable("quantity") int quantity,
 			@PathVariable("orderType") String orderType) {
-		
+		System.out.println(account);
 		Order order = new Order(account, symbol, price, quantity, orderType );
 		
-		String id;
+		String id = "9";
 		OrderStatus status = new OrderStatus();
 		try {
 			id = orderService.placeOrder(order);

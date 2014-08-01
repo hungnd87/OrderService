@@ -8,7 +8,7 @@
 
 	<context:property-placeholder location="classpath:/configs/services.properties" />
 
-	<bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
+	<bean id="restOrderTemplate" class="org.springframework.web.client.RestTemplate">
 		<property name="messageConverters">
 			<list>
 				<bean
@@ -16,14 +16,49 @@
 			</list>
 		</property>
 	</bean>
+	<bean id="restStockTemplate" class="org.springframework.web.client.RestTemplate">
+		<property name="messageConverters">
+			<list>
+				<bean
+					class="org.springframework.http.converter.xml.SourceHttpMessageConverter" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="statusGenerator" class="vn.com.vndirect.utils.StatusGeneratorImpl"></bean>
 
+	<bean id="stockInfoService" class="vn.com.vndirect.service.StockInfoServiceImpl">
+		<constructor-arg>
+			<ref bean="restOrderTemplate" />
+		</constructor-arg>
+		<property name="serviceSenderUrl">
+			<value>${priceServiceSenderUrl}</value>
+		</property>
+	</bean>
 
 	<bean id="orderService" class="vn.com.vndirect.service.OrderServiceImpl">
 		<constructor-arg>
-			<ref bean="restTemplate" />
+			<ref bean="restOrderTemplate" />
 		</constructor-arg>
 		<property name="serviceSenderUrl">
-			<value>${serviceSenderUrl}</value>
+			<value>${orderServiceSenderUrl}</value>
+		</property>
+		<property name="validators">
+		    <list>
+		        <ref bean="accountValidator"/>
+		        <ref bean="symbolValidator"/>
+		        <ref bean="priceGreaterThanZeroValidator"/>
+		        <ref bean="quantityValidator"/>
+		        <ref bean="outOfBoundPriceValidator"/>
+		    </list>
 		</property>
 	</bean>
+	
+	<bean id="accountValidator"  class="vn.com.vndirect.validator.AccountValidator" ></bean>
+	<bean id="outOfBoundPriceValidator"  class="vn.com.vndirect.validator.OutOfBoundPriceValidator" >
+	     <constructor-arg index="0" ref="stockInfoService"/>
+	</bean>
+	<bean id="priceGreaterThanZeroValidator"  class="vn.com.vndirect.validator.PriceGreaterThanZeroValidator" ></bean>
+	<bean id="quantityValidator"  class="vn.com.vndirect.validator.QuantityValidator" ></bean>
+	<bean id="symbolValidator"  class="vn.com.vndirect.validator.SymbolValidator" ></bean>
 </beans>

@@ -4,11 +4,15 @@ import static org.springframework.test.web.client.match.MockRestRequestMatchers.
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import junit.framework.Assert;
 
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.HttpMethod;
@@ -24,6 +28,7 @@ import vn.com.vndirect.exception.OutOfBoundPriceException;
 import vn.com.vndirect.exception.ValidatorException;
 import vn.com.vndirect.model.Order;
 import vn.com.vndirect.model.OrderType;
+import vn.com.vndirect.model.StockInfo;
 import vn.com.vndirect.service.OrderService;
 import vn.com.vndirect.service.OrderServiceImpl;
 import vn.com.vndirect.validator.AccountValidator;
@@ -34,7 +39,7 @@ import vn.com.vndirect.validator.Validator;
 
 public class StockInfoServiceTest {
 	private String serviceSenderUrl;
-	private String orderServiceMethod;
+	private String getPriceServiceMethod;
 	private RestTemplate restTemplate;
 	private StockInfoService stockInfoService;
 	
@@ -42,78 +47,29 @@ public class StockInfoServiceTest {
 	@Before
 	public void setup(){
 		serviceSenderUrl = "http://localhost:8080/orderservice";
-		orderServiceMethod = "getPrice";
+		getPriceServiceMethod = "getPrice";
 		restTemplate = new RestTemplate();
 		stockInfoService = new StockInfoServiceImpl(restTemplate);
 		stockInfoService.setServiceSenderUrl(serviceSenderUrl);
-		stockInfoService.setOrderServiceMethod(orderServiceMethod);
+		stockInfoService.setGetPriceServiceMethod(getPriceServiceMethod);
 	}
 	
 	@Test
-	public void testPlaceOrderWithValidOrder() throws InterruptedException, ValidatorException{
-		
+	public void testPlaceOrderWithValidOrder() throws InterruptedException, ValidatorException, JsonGenerationException, JsonMappingException, IOException{
+		StockInfo stockInfo = new StockInfo();
+		stockInfo.setBasicprice(90);
+		stockInfo.setCeilingPrice(100);
+		stockInfo.setFloorPrice(70);
+		ObjectMapper mapper = new ObjectMapper();
+		String stockInfoJson = mapper.writeValueAsString(stockInfo);
 		MockRestServiceServer mockServer = MockRestServiceServer.createServer(restTemplate);
-		mockServer.expect(requestTo(serviceSenderUrl + orderServiceMethod)).andExpect(method(HttpMethod.POST)).andRespond(withSuccess("10", MediaType.TEXT_PLAIN));
+		mockServer.expect(requestTo(serviceSenderUrl + getPriceServiceMethod)).andExpect(method(HttpMethod.POST)).andRespond(withSuccess(stockInfoJson, MediaType.APPLICATION_JSON));
 
-		Order order = new Order();
-		order.setAccount("hungnd7");
-		order.setOrderType(OrderType.ATC.getCode());
-		order.setPrice(90);
-		order.setQuantity(90);
-		order.setSymbol("VND");
-		String id = orderService.placeOrder(order); 
-		
+		StockInfo result = stockInfoService.getStockInfo("VND");
 		Thread.sleep(100);
 		mockServer.verify();
-		Assert.assertEquals("10", id);
+		Assert.assertEquals(70, result.getFloorPrice(), 0.000);
 	}
 	
-	@Test(expected = InvalidAccountException.class)  
-	public void testPlaceOrderWithInvalidAccount() throws ValidatorException{
-		Order order = new Order();
-		orderService.placeOrder(order);
-	}
-	
-	@Test(expected = InvalidSymbolException.class)  
-	public void testPlaceOrderWithInvalidSymbol() throws ValidatorException{
-		Order order = new Order();
-		order.setAccount("hiop");
-		orderService.placeOrder(order);
-	}
-	
-	@Test(expected = InvalidPriceException.class)  
-	public void testPlaceOrderWithInvalidPrice() throws ValidatorException{
-		Order order = new Order();
-		order.setAccount("hungnd7");
-		order.setOrderType(OrderType.ATC.getCode());
-		order.setSymbol("VTC");
-		orderService.placeOrder(order);
-	}
-	
-	@Test(expected = OutOfBoundPriceException.class)  
-	public void testPlaceOrderWithOutOfBoundPrice() throws ValidatorException{
-		Order order = new Order();
-		order.setAccount("hungnd7");
-		order.setOrderType(OrderType.ATC.getCode());
-		order.setSymbol("VTC");
-		orderService.placeOrder(order);
-	}
-	
-	@Test(expected = InvalidQuantityException.class)  
-	public void testPlaceOrderWithInvalidQuantity() throws ValidatorException{
-		Order order = new Order();
-		order.setAccount("hungnd7");
-		order.setOrderType(OrderType.ATC.getCode());
-		order.setSymbol("VTC");
-		order.setPrice(90);
-		orderService.placeOrder(order);
-	}
-	
-	
-	@Test(expected = InvalidAccountException.class)  
-	public void testPlaceOrderWithInvalidOrderType() throws ValidatorException{
-		Order order = new Order();
-		orderService.placeOrder(order);
-	}
 
 }

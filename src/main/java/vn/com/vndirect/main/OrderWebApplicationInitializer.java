@@ -1,4 +1,4 @@
-package vn.com.vndirect.main;
+/*package vn.com.vndirect.main;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -63,4 +63,4 @@ public class OrderWebApplicationInitializer  implements WebApplicationInitialize
 	}
 
 
-}
+}*/

@@ -29,7 +29,6 @@ public class OrderServiceImpl implements OrderService {
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-
 		String res = restTemplate.postForObject(url, order, String.class);
 		return res;
 	}

@@ -2841,3 +2841,64 @@ Caused by: java.io.FileNotFoundException: class path resource [services.properti
 2014-08-01 03:48:08 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'lifecycleProcessor'
 2014-08-01 03:48:08 INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3749eb9f: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,restTemplate,orderService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
 2014-08-01 03:48:08 DEBUG DefaultListableBeanFactory:500 - Retrieved dependent beans for bean 'org.springframework.http.converter.xml.SourceHttpMessageConverter#7402d5a': [restTemplate]
+2014-08-01 23:35:01 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservicegetPrice"
+2014-08-01 23:35:01 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-01 23:35:01 DEBUG RestTemplate:680 - Writing [VND] using [org.springframework.http.converter.StringHttpMessageConverter@77762fc7]
+2014-08-01 23:35:02 DEBUG RestTemplate:541 - POST request for "http://localhost:8080/orderservicegetPrice" resulted in 200 (OK)
+2014-08-01 23:37:45 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservicegetPrice"
+2014-08-01 23:37:45 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-01 23:37:45 DEBUG RestTemplate:680 - Writing [VND] using [org.springframework.http.converter.StringHttpMessageConverter@25e3bbd7]
+2014-08-01 23:37:45 DEBUG RestTemplate:541 - POST request for "http://localhost:8080/orderservicegetPrice" resulted in 200 (OK)
+2014-08-01 23:37:45 DEBUG RestTemplate:91 - Reading [class vn.com.vndirect.model.StockInfo] as "application/json" using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@508de972]
+2014-08-01 23:39:22 DEBUG RestTemplate:78 - Created POST request for "http://localhost:8080/orderservicegetPrice"
+2014-08-01 23:39:22 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-01 23:39:22 DEBUG RestTemplate:680 - Writing [VND] using [org.springframework.http.converter.StringHttpMessageConverter@373c0b53]
+2014-08-01 23:39:22 DEBUG RestTemplate:541 - POST request for "http://localhost:8080/orderservicegetPrice" resulted in 200 (OK)
+2014-08-01 23:39:22 DEBUG RestTemplate:91 - Reading [class vn.com.vndirect.model.StockInfo] as "application/json" using [org.springframework.http.converter.json.MappingJacksonHttpMessageConverter@687bc899]
+2014-08-02 00:26:27 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC"
+2014-08-02 00:26:27 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 00:26:27 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC" resulted in 400 (Bad Request); invoking error handler
+2014-08-02 00:27:40 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC"
+2014-08-02 00:27:40 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 00:27:40 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC" resulted in 400 (Bad Request); invoking error handler
+2014-08-02 00:28:16 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC"
+2014-08-02 00:28:16 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 00:28:16 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC" resulted in 400 (Bad Request); invoking error handler
+2014-08-02 00:31:34 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC"
+2014-08-02 00:31:34 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 00:31:34 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC" resulted in 400 (Bad Request); invoking error handler
+2014-08-02 00:38:33 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC"
+2014-08-02 00:38:33 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 00:38:33 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC" resulted in 500 (Internal Server Error); invoking error handler
+2014-08-02 00:40:07 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC"
+2014-08-02 00:40:07 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 00:40:07 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC" resulted in 400 (Bad Request); invoking error handler
+2014-08-02 00:40:22 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC"
+2014-08-02 00:40:22 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 00:40:22 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC" resulted in 400 (Bad Request); invoking error handler
+2014-08-02 00:42:55 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC"
+2014-08-02 00:42:55 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 00:42:55 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC" resulted in 400 (Bad Request); invoking error handler
+2014-08-02 00:43:26 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC"
+2014-08-02 00:43:26 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 00:43:26 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC" resulted in 400 (Bad Request); invoking error handler
+2014-08-02 00:59:43 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC"
+2014-08-02 00:59:43 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 00:59:43 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC" resulted in 404 (Not Found); invoking error handler
+2014-08-02 01:00:46 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC"
+2014-08-02 01:00:46 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 01:00:46 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder?account=hii&symbol=VND&price=80&quantity=80&orderType=ATC" resulted in 404 (Not Found); invoking error handler
+2014-08-02 01:02:28 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder?account=hii/symbol%3DVND/price%3D80/quantity%3D80/orderType%3DATC"
+2014-08-02 01:02:28 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 01:02:28 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder?account=hii/symbol%3DVND/price%3D80/quantity%3D80/orderType%3DATC" resulted in 404 (Not Found); invoking error handler
+2014-08-02 01:03:57 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder?account:hii/symbol:VND/price:80/quantity:80/orderType:ATC"
+2014-08-02 01:03:57 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 01:03:57 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder?account:hii/symbol:VND/price:80/quantity:80/orderType:ATC" resulted in 404 (Not Found); invoking error handler
+2014-08-02 01:04:23 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder/account:hii/symbol:VND/price:80/quantity:80/orderType:ATC"
+2014-08-02 01:04:23 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 01:04:23 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder/account:hii/symbol:VND/price:80/quantity:80/orderType:ATC" resulted in 404 (Not Found); invoking error handler
+2014-08-02 01:07:01 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder/account=hung/symbol:VND/price:90/quantity:90/orderType:90"
+2014-08-02 01:07:01 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 01:17:10 DEBUG RestTemplate:78 - Created GET request for "http://localhost:8080/orderservice/placeorder/account:hung/symbol:VND/price:90/quantity:90/orderType:90"
+2014-08-02 01:17:10 DEBUG RestTemplate:602 - Setting request Accept header to [application/json, application/*+json]
+2014-08-02 01:17:10 WARN  RestTemplate:553 - GET request for "http://localhost:8080/orderservice/placeorder/account:hung/symbol:VND/price:90/quantity:90/orderType:90" resulted in 404 (Not Found); invoking error handler

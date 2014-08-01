@@ -44,10 +44,10 @@ public class OrderControlerTest {
 	}
 	
 	
-	@Ignore
+	
 	@Test
 	public void testCallBindParametter() {
-		String url = "http://localhost:8080/orderservice/placeorder";
+		String url = "http://localhost:8080/orderservice/placeorder/account:hung/symbol:VND/price:90/quantity:90/orderType:90";
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
