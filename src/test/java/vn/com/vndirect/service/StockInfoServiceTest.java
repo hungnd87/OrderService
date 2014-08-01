@@ -12,6 +12,7 @@ import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
@@ -39,6 +40,7 @@ public class StockInfoServiceTest {
 		stockInfoService.setGetPriceServiceMethod(getPriceServiceMethod);
 	}
 	
+	@Ignore
 	@Test
 	public void testPlaceOrderWithValidOrder() throws InterruptedException, ValidatorException, JsonGenerationException, JsonMappingException, IOException, ServiceException{
 		StockInfo stockInfo = new StockInfo();

@@ -21,13 +21,16 @@ import vn.com.vndirect.exception.InvalidPriceException;
 import vn.com.vndirect.exception.InvalidQuantityException;
 import vn.com.vndirect.exception.InvalidSymbolException;
 import vn.com.vndirect.exception.OutOfBoundPriceException;
+import vn.com.vndirect.exception.ServiceException;
 import vn.com.vndirect.exception.SimpleException;
 import vn.com.vndirect.exception.ValidatorException;
 import vn.com.vndirect.model.Order;
 import vn.com.vndirect.model.OrderType;
+import vn.com.vndirect.model.StockInfo;
 import vn.com.vndirect.service.OrderService;
 import vn.com.vndirect.service.OrderServiceImpl;
 import vn.com.vndirect.validator.AccountValidator;
+import vn.com.vndirect.validator.OutOfBoundPriceValidator;
 import vn.com.vndirect.validator.PriceGreaterThanZeroValidator;
 import vn.com.vndirect.validator.QuantityValidator;
 import vn.com.vndirect.validator.SymbolValidator;
@@ -53,6 +56,25 @@ public class OrderServiceTest {
 		validators.add(new SymbolValidator());
 		validators.add(new PriceGreaterThanZeroValidator());
 		validators.add(new QuantityValidator());
+		validators.add(new OutOfBoundPriceValidator(new StockInfoService() {
+			
+			@Override
+			public void setServiceSenderUrl(String serviceSenderUrl) {
+			}
+			
+			@Override
+			public void setGetPriceServiceMethod(String getPriceServiceMethod) {
+			}
+			
+			@Override
+			public StockInfo getStockInfo(String stockCode) throws ServiceException {
+				StockInfo stockInfo = new StockInfo();
+				stockInfo.setCeilingPrice(90);
+				stockInfo.setFloorPrice(80);
+				stockInfo.setSymbol("VND");
+				return stockInfo;
+			}
+		}));
 		orderService.setValidators(validators);
 	}
 	
@@ -103,6 +125,8 @@ public class OrderServiceTest {
 		order.setAccount("hungnd7");
 		order.setOrderType(OrderType.ATC.getCode());
 		order.setSymbol("VTC");
+		order.setPrice(190);
+		order.setQuantity(200);
 		orderService.placeOrder(order);
 	}
 	

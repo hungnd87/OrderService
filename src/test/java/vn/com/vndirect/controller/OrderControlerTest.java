@@ -7,6 +7,7 @@ import java.util.List;
 import junit.framework.Assert;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -44,7 +45,7 @@ public class OrderControlerTest {
 	}
 	
 	
-	
+	@Ignore
 	@Test
 	public void testCallBindParametter() {
 		String url = "http://localhost:8080/orderservice/placeorder/account:hung/symbol:VND/price:90/quantity:90/orderType:90";
