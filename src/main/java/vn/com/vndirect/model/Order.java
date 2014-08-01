@@ -8,10 +8,19 @@ public class Order implements Serializable {
 	private String symbol;
 	private double price;
 	private int quantity;
-	private OrderType orderType;
+	private String orderType;
 
 	public Order() {
 
+	}
+
+	public Order(String account, String symbol, double price,
+			int quantity, String orderType) {
+		this.account = account;
+		this.symbol = symbol;
+		this.price = price;
+		this.quantity = quantity;
+		this.orderType = orderType;
 	}
 
 	public String getAccount() {
@@ -46,11 +55,11 @@ public class Order implements Serializable {
 		this.quantity = quantity;
 	}
 
-	public OrderType getOrderType() {
+	public String getOrderType() {
 		return orderType;
 	}
 
-	public void setOrderType(OrderType orderType) {
+	public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	};
 

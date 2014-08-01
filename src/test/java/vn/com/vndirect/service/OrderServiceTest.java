@@ -62,7 +62,7 @@ public class OrderServiceTest {
 		
 		Order order = new Order();
 		order.setAccount("hungnd7");
-		order.setOrderType(OrderType.ATC);
+		order.setOrderType(OrderType.ATC.getCode());
 		order.setPrice(90);
 		order.setQuantity(90);
 		order.setSymbol("VND");
@@ -89,7 +89,16 @@ public class OrderServiceTest {
 	public void testPlaceOrderWithInvalidPrice() throws ValidatorException{
 		Order order = new Order();
 		order.setAccount("hungnd7");
-		order.setOrderType(OrderType.ATC);
+		order.setOrderType(OrderType.ATC.getCode());
+		order.setSymbol("VTC");
+		orderService.placeOrder(order);
+	}
+	
+	@Test(expected = InvalidPriceException.class)  
+	public void testPlaceOrderWithOutOfBoundPrice() throws ValidatorException{
+		Order order = new Order();
+		order.setAccount("hungnd7");
+		order.setOrderType(OrderType.ATC.getCode());
 		order.setSymbol("VTC");
 		orderService.placeOrder(order);
 	}
@@ -98,7 +107,7 @@ public class OrderServiceTest {
 	public void testPlaceOrderWithInvalidQuantity() throws ValidatorException{
 		Order order = new Order();
 		order.setAccount("hungnd7");
-		order.setOrderType(OrderType.ATC);
+		order.setOrderType(OrderType.ATC.getCode());
 		order.setSymbol("VTC");
 		order.setPrice(90);
 		orderService.placeOrder(order);

@@ -2,8 +2,6 @@ package vn.com.vndirect.model;
 
 import java.io.Serializable;
 
-import org.codehaus.jackson.annotate.JsonAutoDetect;
-
 public class StockInfo implements Serializable {
 
 	private static final long serialVersionUID = 1L;
