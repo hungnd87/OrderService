@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import vn.com.vndirect.exception.SimpleException;
 import vn.com.vndirect.exception.ValidatorException;
 import vn.com.vndirect.model.Order;
 import vn.com.vndirect.model.OrderResult;
@@ -29,7 +30,7 @@ public class OrderController {
 			@PathVariable("symbol") String symbol,
 			@PathVariable("price") double price,
 			@PathVariable("quantity") int quantity,
-			@PathVariable("orderType") String orderType) {
+			@PathVariable("orderType") String orderType) throws SimpleException {
 		System.out.println(account);
 		Order order = new Order(account, symbol, price, quantity, orderType );
 		
@@ -38,10 +39,10 @@ public class OrderController {
 		try {
 			id = orderService.placeOrder(order);
 			status.setStatus(StatusCode.OK.getCode());
-		} catch (ValidatorException e) {
+		} catch (SimpleException exception) {
 			id = "";
-			status = statusGenerator.genarateSatus(e);
-		}
+			status = statusGenerator.generateStatus(exception);
+		} 
 		
 		OrderResult result = new OrderResult(id, status);
 		

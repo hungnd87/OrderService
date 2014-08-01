@@ -5,9 +5,11 @@ import java.util.List;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
-import vn.com.vndirect.exception.ValidatorException;
+import vn.com.vndirect.exception.ServiceException;
+import vn.com.vndirect.exception.SimpleException;
 import vn.com.vndirect.model.Order;
 import vn.com.vndirect.validator.Validator;
 
@@ -23,17 +25,22 @@ public class OrderServiceImpl implements OrderService {
 	}
 
 	@Override
-	public String placeOrder(Order order) throws ValidatorException {
+	public String placeOrder(Order order) throws SimpleException {
 		validateOrder(order);
 		String url = serviceSenderUrl + orderServiceMethod;
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-		String res = restTemplate.postForObject(url, order, String.class);
+		String res;
+		try {
+			res = restTemplate.postForObject(url, order, String.class);
+		} catch (RestClientException e) {
+			throw new ServiceException();
+		}
 		return res;
 	}
 
-	private void validateOrder(Order order) throws ValidatorException {
+	private void validateOrder(Order order) throws SimpleException {
 		for (Validator validator : validators) {
 			validator.validate(order);
 		}

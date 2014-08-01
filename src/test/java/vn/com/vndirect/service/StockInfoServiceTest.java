@@ -5,8 +5,6 @@ import static org.springframework.test.web.client.match.MockRestRequestMatchers.
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 import junit.framework.Assert;
 
@@ -20,22 +18,9 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.web.client.RestTemplate;
 
-import vn.com.vndirect.exception.InvalidAccountException;
-import vn.com.vndirect.exception.InvalidPriceException;
-import vn.com.vndirect.exception.InvalidQuantityException;
-import vn.com.vndirect.exception.InvalidSymbolException;
-import vn.com.vndirect.exception.OutOfBoundPriceException;
+import vn.com.vndirect.exception.ServiceException;
 import vn.com.vndirect.exception.ValidatorException;
-import vn.com.vndirect.model.Order;
-import vn.com.vndirect.model.OrderType;
 import vn.com.vndirect.model.StockInfo;
-import vn.com.vndirect.service.OrderService;
-import vn.com.vndirect.service.OrderServiceImpl;
-import vn.com.vndirect.validator.AccountValidator;
-import vn.com.vndirect.validator.PriceGreaterThanZeroValidator;
-import vn.com.vndirect.validator.QuantityValidator;
-import vn.com.vndirect.validator.SymbolValidator;
-import vn.com.vndirect.validator.Validator;
 
 public class StockInfoServiceTest {
 	private String serviceSenderUrl;
@@ -55,7 +40,7 @@ public class StockInfoServiceTest {
 	}
 	
 	@Test
-	public void testPlaceOrderWithValidOrder() throws InterruptedException, ValidatorException, JsonGenerationException, JsonMappingException, IOException{
+	public void testPlaceOrderWithValidOrder() throws InterruptedException, ValidatorException, JsonGenerationException, JsonMappingException, IOException, ServiceException{
 		StockInfo stockInfo = new StockInfo();
 		stockInfo.setBasicprice(90);
 		stockInfo.setCeilingPrice(100);

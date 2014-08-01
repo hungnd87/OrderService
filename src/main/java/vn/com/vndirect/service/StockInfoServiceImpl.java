@@ -4,8 +4,10 @@ import java.util.Arrays;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
+import vn.com.vndirect.exception.ServiceException;
 import vn.com.vndirect.model.StockInfo;
 
 public class StockInfoServiceImpl implements StockInfoService {
@@ -18,12 +20,17 @@ public class StockInfoServiceImpl implements StockInfoService {
 	}
 
 	@Override
-	public StockInfo getStockInfo(String stockCode){
+	public StockInfo getStockInfo(String stockCode) throws ServiceException{
 		String url = serviceSenderUrl + getPriceServiceMethod;
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-		StockInfo res = restTemplate.postForObject(url, stockCode, StockInfo.class);
+		StockInfo res;
+		try {
+			res = restTemplate.postForObject(url, stockCode, StockInfo.class);
+		} catch (RestClientException e) {
+			throw new ServiceException();
+		}
 		return res;
 	}
 

@@ -1,4 +1,4 @@
-/*package vn.com.vndirect.main;
+package vn.com.vndirect.main;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -20,7 +20,7 @@ public class OrderWebApplicationInitializer  implements WebApplicationInitialize
 	    container.addServlet("dispatcher", new DispatcherServlet(appContext));
 	    dispatcher.setLoadOnStartup(1);
 	    dispatcher.addMapping("/");
-	    
+	    /*
 	    Thread stopThread = new Thread(new Runnable() {
 			
 			@Override
@@ -58,9 +58,9 @@ public class OrderWebApplicationInitializer  implements WebApplicationInitialize
 			}
 		});
 	   
-	    startThread.start();
+	    startThread.start();*/
 	    
 	}
 
 
-}*/
+}

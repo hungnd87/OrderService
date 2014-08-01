@@ -21,6 +21,7 @@ import vn.com.vndirect.exception.InvalidPriceException;
 import vn.com.vndirect.exception.InvalidQuantityException;
 import vn.com.vndirect.exception.InvalidSymbolException;
 import vn.com.vndirect.exception.OutOfBoundPriceException;
+import vn.com.vndirect.exception.SimpleException;
 import vn.com.vndirect.exception.ValidatorException;
 import vn.com.vndirect.model.Order;
 import vn.com.vndirect.model.OrderType;
@@ -56,7 +57,7 @@ public class OrderServiceTest {
 	}
 	
 	@Test
-	public void testPlaceOrderWithValidOrder() throws InterruptedException, ValidatorException{
+	public void testPlaceOrderWithValidOrder() throws InterruptedException, SimpleException{
 		
 		MockRestServiceServer mockServer = MockRestServiceServer.createServer(restTemplate);
 		mockServer.expect(requestTo(serviceSenderUrl + orderServiceMethod)).andExpect(method(HttpMethod.POST)).andRespond(withSuccess("10", MediaType.TEXT_PLAIN));
@@ -75,20 +76,20 @@ public class OrderServiceTest {
 	}
 	
 	@Test(expected = InvalidAccountException.class)  
-	public void testPlaceOrderWithInvalidAccount() throws ValidatorException{
+	public void testPlaceOrderWithInvalidAccount() throws SimpleException{
 		Order order = new Order();
 		orderService.placeOrder(order);
 	}
 	
 	@Test(expected = InvalidSymbolException.class)  
-	public void testPlaceOrderWithInvalidSymbol() throws ValidatorException{
+	public void testPlaceOrderWithInvalidSymbol() throws SimpleException{
 		Order order = new Order();
 		order.setAccount("hiop");
 		orderService.placeOrder(order);
 	}
 	
 	@Test(expected = InvalidPriceException.class)  
-	public void testPlaceOrderWithInvalidPrice() throws ValidatorException{
+	public void testPlaceOrderWithInvalidPrice() throws SimpleException{
 		Order order = new Order();
 		order.setAccount("hungnd7");
 		order.setOrderType(OrderType.ATC.getCode());
@@ -97,7 +98,7 @@ public class OrderServiceTest {
 	}
 	
 	@Test(expected = OutOfBoundPriceException.class)  
-	public void testPlaceOrderWithOutOfBoundPrice() throws ValidatorException{
+	public void testPlaceOrderWithOutOfBoundPrice() throws SimpleException{
 		Order order = new Order();
 		order.setAccount("hungnd7");
 		order.setOrderType(OrderType.ATC.getCode());
@@ -106,7 +107,7 @@ public class OrderServiceTest {
 	}
 	
 	@Test(expected = InvalidQuantityException.class)  
-	public void testPlaceOrderWithInvalidQuantity() throws ValidatorException{
+	public void testPlaceOrderWithInvalidQuantity() throws SimpleException{
 		Order order = new Order();
 		order.setAccount("hungnd7");
 		order.setOrderType(OrderType.ATC.getCode());
@@ -117,7 +118,7 @@ public class OrderServiceTest {
 	
 	
 	@Test(expected = InvalidAccountException.class)  
-	public void testPlaceOrderWithInvalidOrderType() throws ValidatorException{
+	public void testPlaceOrderWithInvalidOrderType() throws SimpleException{
 		Order order = new Order();
 		orderService.placeOrder(order);
 	}

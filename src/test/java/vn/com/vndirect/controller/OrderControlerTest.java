@@ -7,12 +7,12 @@ import java.util.List;
 import junit.framework.Assert;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.web.client.RestTemplate;
 
+import vn.com.vndirect.exception.SimpleException;
 import vn.com.vndirect.model.OrderResult;
 import vn.com.vndirect.model.OrderType;
 import vn.com.vndirect.model.StatusCode;
@@ -60,7 +60,7 @@ public class OrderControlerTest {
 	}
 	
 	@Test
-	public void testPlaceOrderWithInvalidParam() {
+	public void testPlaceOrderWithInvalidParam() throws SimpleException {
 		OrderController orderController = new OrderController();
 		orderController.setOrderService(orderService);
 		orderController.setStatusGenerator(new StatusGeneratorImpl());

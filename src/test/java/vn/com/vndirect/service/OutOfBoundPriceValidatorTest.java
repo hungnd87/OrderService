@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import vn.com.vndirect.exception.OutOfBoundPriceException;
+import vn.com.vndirect.exception.SimpleException;
 import vn.com.vndirect.exception.ValidatorException;
 import vn.com.vndirect.model.Order;
 import vn.com.vndirect.model.StockInfo;
@@ -38,7 +39,7 @@ public class OutOfBoundPriceValidatorTest {
 	
 	
 	@Test(expected = OutOfBoundPriceException.class)  
-	public void testValidateWithOutOfBoundPrice() throws ValidatorException{
+	public void testValidateWithOutOfBoundPrice() throws SimpleException{
 		Order order = new Order();
 		order.setSymbol("VNS");
 		
