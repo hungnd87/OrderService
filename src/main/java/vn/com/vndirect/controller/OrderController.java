@@ -31,7 +31,6 @@ public class OrderController {
 			@PathVariable("price") double price,
 			@PathVariable("quantity") int quantity,
 			@PathVariable("orderType") String orderType) throws SimpleException {
-		System.out.println(account);
 		Order order = new Order(account, symbol, price, quantity, orderType );
 		
 		String id = "9";
