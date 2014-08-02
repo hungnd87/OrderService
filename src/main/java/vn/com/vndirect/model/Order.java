@@ -9,6 +9,8 @@ public class Order implements Serializable {
 	private double price;
 	private int quantity;
 	private String orderType;
+	private String orderId;
+
 
 	public Order() {
 
@@ -63,4 +65,11 @@ public class Order implements Serializable {
 		this.orderType = orderType;
 	};
 
+	public String getOrderId() {
+		return orderId;
+	}
+	
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
 }
