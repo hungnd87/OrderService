@@ -9,5 +9,8 @@ public interface OrderCache {
 	void save(Order order);
 
 	List<Order> getOrdersByAccount(String string);
+	List<Order> getTopOrder(int number);
+	List<String> getTopAccount(int number);
+	
 
 }

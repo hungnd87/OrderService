@@ -10,6 +10,7 @@ public class Order implements Serializable {
 	private int quantity;
 	private String orderType;
 	private String orderId;
+	private double value;
 
 
 	public Order() {
@@ -71,5 +72,13 @@ public class Order implements Serializable {
 	
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
+	}
+
+	public double getValue() {
+		return value;
+	}
+
+	public void setValue(double value) {
+		this.value = value;
 	}
 }

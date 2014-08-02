@@ -16,7 +16,8 @@
 	<!-- Aspect -->
 	<bean id="saveToCache" class="vn.com.vndirect.aop.SaveToCacheAspect" />
 
-		<bean id="orderCache" class="vn.com.vndirect.cache.OrderCacheImpl" />
+	<bean id="orderCache" class="vn.com.vndirect.cache.OrderCacheImpl" init-method="init"/>
+	<bean id="orderComparator" class="vn.com.vndirect.comparator.OrderComparatorImpl" />
 	
 	<bean id="restOrderTemplate" class="org.springframework.web.client.RestTemplate">
 		<property name="messageConverters">
