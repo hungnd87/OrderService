@@ -43,7 +43,10 @@
 			<ref bean="restOrderTemplate" />
 		</constructor-arg>
 		<property name="serviceSenderUrl">
-			<value>${priceServiceSenderUrl}</value>
+			<value>${priceService.senderUrl}</value>
+		</property>
+		<property name="getPriceServiceMethod">
+			<value>${priceService.method}</value>
 		</property>
 	</bean>
 
@@ -52,8 +55,13 @@
 			<ref bean="restOrderTemplate" />
 		</constructor-arg>
 		<property name="serviceSenderUrl">
-			<value>${orderServiceSenderUrl}</value>
+			<value>${orderService.senderUrl}</value>
 		</property>
+		<property name="orderServiceMethod">
+			<value>${orderService.method}</value>
+		</property>
+		
+		
 		<property name="validators">
 		    <list>
 		        <ref bean="accountValidator"/>

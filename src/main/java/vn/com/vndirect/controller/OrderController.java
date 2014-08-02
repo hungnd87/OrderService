@@ -32,8 +32,7 @@ public class OrderController {
 	@Autowired
 	private OrderCache orderCache;
 	
-	@Value("{topnumber}")
-	private String topNumber;
+	private Integer topNumber = 10;
 
 	@RequestMapping(value = "/placeorder/account:{account}/symbol:{symbol}/price:{price}/quantity:{quantity}/orderType:{orderType}", method = RequestMethod.GET)
 	public @ResponseBody
@@ -63,14 +62,14 @@ public class OrderController {
 	@RequestMapping(value = "/toporder", method = RequestMethod.GET)
 	public @ResponseBody
 	List<Order> getTopOrder() {
-		List<Order> orders = orderCache.getTopOrder(Integer.parseInt(topNumber));
+		List<Order> orders = orderCache.getTopOrder(topNumber);
 		return orders;
 	}
 
 	@RequestMapping(value = "/topaccount", method = RequestMethod.GET)
 	public @ResponseBody
 	List<String> getTopAccount() {
-		List<String> accounts = orderCache.getTopAccount(Integer.parseInt(topNumber));
+		List<String> accounts = orderCache.getTopAccount(topNumber);
 		return accounts;
 	}
 
