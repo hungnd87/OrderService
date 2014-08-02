@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.util.StringUtils;
+
 import vn.com.vndirect.model.Order;
 import vn.com.vndirect.cache.OrderCache;;
 
@@ -18,6 +20,7 @@ public class OrderCacheImpl implements OrderCache{
 	
 	@Override
 	public void save(Order order) {
+		if (StringUtils.isEmpty(order.getOrderId())) return;
 		List<Order> orders = getOrdersByAccount(order.getAccount());
 		orders.add(order);
 	}
